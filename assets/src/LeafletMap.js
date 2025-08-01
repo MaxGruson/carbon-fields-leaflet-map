@@ -211,7 +211,7 @@ class MapField extends Component {
       } );
 
       // Adjust lat & lng on marker move
-      this.marker.addEventListener( 'moveend', ( args ) => {
+      this.marker.addEventListener( 'dragend', ( args ) => {
         const l = args.target.getLatLng();
         
         this.map.panTo( l );
